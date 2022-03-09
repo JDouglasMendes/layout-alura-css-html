@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'icones';
+    src: url(./assets/font/icones.ttf);
+}
+
+body {
+    background-color: #1D232A;
+    font-family: 'Open Sans', 'icones', sans-serif;
+    color: #FFFFFF;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #1D232A;
+    align-items: center;
+    padding: 8px 16px;
+    box-shadow: 0px 15px 10px -15px #111;
+}
+
+.header-button-menu i::before {
+    content: "\e904";
+    font-size: 24px;
+}
+
+.logo {
+    width: 40px;
+}
+
+.header-button-notification i::before {
+    content: "\e906";
+    font-size: 24px;
+}
+
+.init {
+    padding: 8px 18px;
+}
+
+.card {
+    width: 100%;
+    overflow: hidden;
+}
+
+.image-main {
+    object-fit: contain;
+}
