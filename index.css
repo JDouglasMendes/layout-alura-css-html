@@ -32,6 +32,12 @@ body {
     font-size: 24px;
 }
 
+.container {
+    padding: 24px 16px;
+    display: grid;
+    gap: 16px;
+}
+
 .init {
     padding: 8px 18px;
 }
@@ -41,6 +47,43 @@ body {
     overflow: hidden;
 }
 
+.card-content {
+    display: grid;
+    gap: 8px;
+    grid-template-columns: auto 1fr;
+}
+
+.card-title {
+    grid-column: span 2;
+}
+
+.card-sub-title {
+    grid-column: span 2;
+}
+
+
+.card-time::before {
+    content: "\e90c";
+    margin-right: 4px;
+}
+
+.card-visualization::before {
+    content: "\e90f";
+    margin-right: 4px;
+}
+
 .image-main {
     object-fit: contain;
+}
+
+.btn-play {
+    background-color: #0480DC;
+    width: 100%;
+    grid-column: span 2;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.btn-play::before {
+    content: "\e90b";
 }
